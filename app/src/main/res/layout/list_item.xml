@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:id="@+id/card_container"
+    app:cardCornerRadius="10dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:layout_margin="10dp"
+    android:shape="rectangle"
+    android:thicknessRatio="6.9"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_linear"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="Full name"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/full_name"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="center"
+            android:text="2022-04-01:1900"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_gravity="center"
+            android:text="Arrived"
+            android:gravity="center"
+            android:id="@+id/arrival_departure"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

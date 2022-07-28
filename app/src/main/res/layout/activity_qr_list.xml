@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrListActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="5dp"
+        android:id="@+id/recycler_list"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/floats"
+        android:layout_marginHorizontal="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/floats"
+        android:padding="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/search_bar"
+            android:layout_margin="5dp"
+            app:queryHint="Search Name.."
+
+            android:id="@+id/search_view_home"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_qr_arrival"
+            app:backgroundTint="@color/grey"
+            android:layout_margin="5dp"
+            app:tint="@color/white"
+            android:src="@drawable/arrival"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_qr_departure"
+            android:layout_margin="5dp"
+            android:src="@drawable/departures"
+
+            app:backgroundTint="@color/grey"
+            app:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
