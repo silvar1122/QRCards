@@ -278,6 +278,12 @@ public class QrListActivity extends AppCompatActivity implements PopupMenu.OnMen
                qrListAdapters.notifyDataSetChanged();
                Toast.makeText(this, "Record deleted", Toast.LENGTH_SHORT).show();
                return true;
+           case R.id.generate:
+               Toast.makeText(this, "New Activitw", Toast.LENGTH_SHORT).show();
+
+               Intent intent=new Intent(QrListActivity.this,MainActivity.class);
+               startActivity(intent);
+               return true;
 
            default:
                return false;
